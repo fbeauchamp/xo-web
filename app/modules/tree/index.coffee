@@ -33,6 +33,7 @@ module.exports = angular.module 'xoWebApp.tree', [
       hosts: { get: -> xoApi.byTypes.host },
       VMs: { get: -> xoApi.byTypes.VM },
     })
+     
 
     $scope.pool_disconnect = xo.pool.disconnect
     $scope.new_sr = xo.pool.new_sr
@@ -141,7 +142,6 @@ module.exports = angular.module 'xoWebApp.tree', [
           'windows'
         else
           'other'
-
     # VMs checkboxes.
     do ->
       # This map marks which VMs are selected.

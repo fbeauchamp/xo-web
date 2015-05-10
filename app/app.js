@@ -7,6 +7,7 @@ import uiIndeterminate from'angular-ui-indeterminate';
 import uiRouter from'angular-ui-router';
 import uiSelect from'angular-ui-select';
 
+
 import naturalSort from 'angular-natural-sort';
 import xeditable from 'angular-xeditable';
 
@@ -28,10 +29,13 @@ import poolState from './modules/pool';
 import settingsState from './modules/settings';
 import srState from './modules/sr';
 import treeState from './modules/tree';
+import dataVizState from './modules/dataviz';
 import vmState from './modules/vm';
 import isoDevice from './modules/iso-device';
 
 import '../dist/bower_components/angular-chart.js/dist/angular-chart.js';
+
+import d3 from 'd3';
 
 //====================================================================
 
@@ -39,8 +43,8 @@ export default angular.module('xoWebApp', [
   uiBootstrap,
   uiIndeterminate,
   uiRouter,
-  uiSelect,
-
+  uiSelect, 
+  
   naturalSort,
   xeditable,
 
